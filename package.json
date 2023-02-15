@@ -1,0 +1,21 @@
+{
+  "name": "ray_tracing_ts",
+  "version": "1.0.0",
+  "description": "Ray Tracing implemented in TypeScript",
+  "author": "qiqt",
+  "license": "MIT",
+  "scripts": {
+    "projectiles": "ts-node src/examples/projectiles.ts",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2",
+    "@types/jest": "^29.4.0",
+    "babel-jest": "^29.4.3",
+    "jest": "^29.4.2",
+    "ts-jest": "^29.0.5",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.3"
+  }
+}

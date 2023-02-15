@@ -1,4 +1,4 @@
-import { add, subtract, negate, multiply, divide } from "../tuple";
+import { add, subtract, negate, multiply, divide, magnitude, normalize } from "../src/tuple";
 
 describe("add", () => {
   it("should add the x, y, z, and w properties of two tuples", () => {
@@ -41,5 +41,21 @@ describe("divide", () => {
     const b = 2;
     const result = divide(a, b);
     expect(result).toEqual({ x: 1, y: 2, z: 3, w: 4 });
+  });
+});
+
+describe("magnitude", () => {
+  it("should return the magnitude of a vector", () => {
+    const a = { x: 1, y: 2, z: 3, w: 4 };
+    const result = magnitude(a);
+    expect(result).toEqual(5.477225575051661);
+  });
+});
+
+describe("normalize", () => {
+  it("should return the normalized vector", () => {
+    const a = { x: 1, y: 2, z: 3, w: 4 };
+    const result = normalize(a);
+    expect(result).toEqual({ x: 0.18257418583505536, y: 0.3651483716701107, z: 0.5477225575051661, w: 0.7302967433402214 });
   });
 });
