@@ -1,4 +1,4 @@
-import { add, subtract, negate, multiply, divide, magnitude, normalize } from "../src/tuple";
+import { add, subtract, negate, multiply, divide, magnitude, normalize } from "../tuple";
 
 describe("add", () => {
   it("should add the x, y, z, and w properties of two tuples", () => {

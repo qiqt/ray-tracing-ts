@@ -1,4 +1,4 @@
-import { add, Point, Vector, normalize } from "../src/tuple";
+import { add, Point, Vector, normalize } from "../tuple";
 
 type Projectile = {
   position: Point;
