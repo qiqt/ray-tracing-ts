@@ -1,4 +1,4 @@
-import { add, subtract, multiply, multiplyScalar, normalize } from "../color";
+import { add, subtract, multiply, multiplyScalar } from "../color";
 import {toBeDeepCloseTo} from 'jest-matcher-deep-close-to';
 expect.extend({toBeDeepCloseTo});
 
